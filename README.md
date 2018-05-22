@@ -1,9 +1,5 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+# My personal site
+This site will soon replace the one currenty up on www.zelderp.com. It's based on [GatsbyJS](https://gatsbyjs.org/) and written primarily in Typescript.
 
 ## Running in development
 `gatsby develop`

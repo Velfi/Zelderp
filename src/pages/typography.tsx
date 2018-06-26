@@ -1,14 +1,10 @@
 import * as React from 'react'
-import Link from 'gatsby-link'
-import Card from '../components/Card'
 
 class StyleGuide extends React.Component {
   render() {
     return (
-      <Card>
-        <p>Typography</p>
+      <div>
         <h1>Header 1</h1>
-        <p>Font: / Color:</p>
         <h2>Header 2</h2>
         <h3>Header 3</h3>
         <h4>Header 4</h4>
@@ -28,8 +24,8 @@ class StyleGuide extends React.Component {
           ligula vel nunc egestas porttitor.
         </p>
 
-        <p>This is an <a href="/">anchor tag</a> setin a paragraph.</p>
-      </Card>
+        <p>This is an <a href="/">anchor tag</a> set in a paragraph.</p>
+      </div>
     )
   }
 }

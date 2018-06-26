@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 import { BlogPreview } from '../components/BlogPreview'
-import Card from '../components/Card';
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,19 +12,14 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
+      <div className="content-wrapper">
         <Helmet title={siteTitle} />
-        <Card style={{marginBottom: '1rem', background: 'white'}}>
-          <h3 style={{marginBottom: '1rem'}}>Welcome!</h3>
-          <Bio />
-        </Card>
-        {posts.map(({ node }: any) =>
-          <Card key={node.fields.slug} style={{
-            marginBottom: '1rem'
-          }}>
-            <BlogPreview post={node}/>
-          </Card>
-        )}
+        <h3>Welcome!</h3>
+        <Bio />
+        <h3>Stuff I Wrote</h3>
+        {posts.map(({ node }: any) => (
+          <BlogPreview key={node.fields.slug} post={node} />
+        ))}
       </div>
     )
   }

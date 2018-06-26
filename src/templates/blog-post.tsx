@@ -4,7 +4,6 @@ import Link from 'gatsby-link'
 import { get } from 'lodash'
 
 import Bio from '../components/Bio'
-import Card from '../components/Card';
 
 interface BlogPostTemplateProps {
   pathContext: any
@@ -18,7 +17,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps> {
     const { previous, next } = this.props.pathContext
 
     return (
-      <Card>
+      <div className="card">
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h2>{post.frontmatter.title}</h2>
         <p
@@ -64,7 +63,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps> {
             </li>
           )}
         </ul>
-      </Card>
+      </div>
     )
   }
 }

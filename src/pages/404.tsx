@@ -1,8 +1,7 @@
 import * as React from 'react'
-import Card from '../components/Card'
 
 const NotFoundPage = () => (
-  <Card>
+  <div className="card">
     <h1>404 - NOT FOUND</h1>
     <p
       style={{
@@ -38,7 +37,7 @@ const NotFoundPage = () => (
         T. S. Eliot
       </a>
     </p>
-  </Card>
+  </div>
 )
 
 export default NotFoundPage

@@ -5,7 +5,7 @@ module.exports = {
     description: 'My personal blog.',
     siteUrl: 'http://zelderp.com/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  // pathPrefix: '/gatsby-starter-blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
